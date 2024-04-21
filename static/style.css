@@ -1,0 +1,659 @@
+:root {
+    --normal-font: 1.1vw;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+
+}
+.intro {
+    background: url(/static/utopia1/Air\ bnb-\ Kyle\ Lewin-9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: sticky;
+}
+nav {
+    display: flex;
+    width: 100vw;
+    padding: 2vw 0 0 0;
+    justify-content: center;  
+    gap: 80vw;  
+}
+nav .logo {
+    width: 11vw;
+    cursor: pointer;
+}
+nav .calendar {
+    width: 3vw;
+    align-self: center;
+    cursor: pointer;
+}
+nav a {
+    color: white;
+}
+.definition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 5vh 0;
+    background-color: white;
+    justify-content: center;
+    z-index: 1;
+    gap: 3vh;
+}
+.definition .heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+h1, p {
+    margin: 0;
+}
+span {
+    font-weight: bold;
+}
+#noun {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+}
+.utopia-def {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.nonqoba-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.nonqoba-intro p {
+    text-align: center;
+}
+.border {
+    width: 100%;
+    background-color: #1A130A;
+    height: 1px;
+}
+.definition-img {
+    height: 48vh;
+    width: 100%;
+    object-fit: cover;
+}
+h1 {
+    font-size: 4vw;
+}
+p, a {
+    font-size: var(--normal-font);
+}
+
+/* prop-container */
+.prop-container {
+    position: relative;
+    color: white;
+    width: 100%;
+    padding: 100px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background: #462c198a;
+    min-height: 50vh;
+}
+ .prop-title-sub, .prop-container p, .prop-actions{
+    width: 50%;
+    text-align: center;
+}
+.prop-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+#prop-1 {
+    background: url(/static/utopia1/Air\ bnb-\ Kyle\ Lewin-22.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#prop-2 {
+    background: url(/static/utopia1/Air\ bnb-\ Kyle\ Lewin-42.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#prop-3 {
+    background: url(/static/lemerill/Air\ bnb-\ Kyle\ Lewin-14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#prop-4 {
+    background: url(/static/lemerill/Air\ bnb-\ Kyle\ Lewin-25.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prop-title {
+    font-size: 3vw;
+}
+.prop-sub {
+    font-size: 2vw;
+    margin-left: 16px;
+}
+.prop-actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+button {
+    font-family: "Alegreya Sans SC", sans-serif;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+}
+.primary-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.primary-actions button {
+    background-color: #A18058;
+    border: none;
+}
+
+.primary-actions a {
+    color: white;
+}
+.secondary-action button {
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+/* mini gallery */
+.mini-gallery {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.gallery-navigation {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    cursor: pointer;
+}
+
+.images img {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-navigation img {
+    width: 4vw;
+}
+.mini-gallery .images {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.images {
+    scroll-snap-type: x mandatory;
+  }
+  
+.images img {
+    scroll-snap-align: start;
+  }
+
+
+/* Form */
+form {
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    align-self: center;
+}
+
+.contact-details a {
+    text-decoration: none;
+}
+.contact-details .title {
+    font-size: 6vw;
+    font-weight: 400;
+    color: rgba(70, 44, 25, 0.25);
+}
+.details-1, .details-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vh 0;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.details-1 a {
+    color: #A18058;
+}
+.details-2 {
+    background-color: #A18058;
+}
+#detail-a {
+    color: white;
+}
+.detail img {
+    width: 1.5vw;
+}
+.form {
+    gap: 2vh;
+}
+h2 {
+    font-size: 2vw;
+    color: #A18058;
+    font-weight: 400;
+    margin: 0;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 4px;
+}
+input, textarea {
+    padding: 1.7vh 0;
+    border: none;
+    border-bottom: solid 1px #805D33;
+}
+input::placeholder, textarea::placeholder, input:focus, 
+input:not(:focus), textarea:focus, textarea:not(:focus) {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: var(--normal-font);
+}
+
+.form button {
+    border: none;
+    background-color: #BCBD8B;
+}
+.form-img {
+    display: none;
+}
+footer {
+    width: 100vw;
+    color: white;
+    background-color: #A18058;
+    padding: 1.3vw 0;
+    display: flex;
+    justify-content: center;
+}
+#img50, #img51 {
+    display: none;
+    height: 30vh;
+    margin-bottom: 5px;
+}
+@media (min-width: 0px) and (max-width: 1000px) {
+    :root {
+        --normal-font: 3.6vw;
+    }
+    .prop-title-sub, .prop-container p, .prop-actions{
+        width: 80%;
+        text-align: left;
+    }
+    .intro {
+        border-radius: 0 0 40px 40px;
+    }
+    nav {
+        gap: 45vw;
+    }
+    nav .logo {
+        width: 34vw;
+    }
+    nav .calendar {
+        width: 12vw;
+    }
+    .definition {
+        gap: 2vh;
+    }
+    .definition .heading {
+        width: 89vw;
+    }
+    .utopia-def {
+        width: 100%;
+        gap: 1vh;
+    }
+    .nonqoba-intro {
+        width: 100%;
+        gap: 1vh;
+    }
+    .definition-img {
+        height: 48vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    p, a {
+        font-size: 3.6vw;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    .mini-gallery .images {
+        overflow: scroll;
+    }
+
+    /* prop-container */
+    .prop-container {
+        padding: 40px 0px;
+    }
+    .prop-title-sub, .prop-container p, .prop-actions{
+        width: 89%;
+    }
+    .prop-title {
+        font-size: 6vw;
+    }
+    .prop-sub {
+        font-size: 5vw;
+    }
+    button {
+        font-size: 3.6vw;
+        padding: 6px;
+    }
+    .prop-actions {
+        gap: 9px;
+    }
+    .primary-actions {
+        gap: 15px;
+    }
+
+    /* gallery */
+    .gallery-navigation img {
+        width: 6vw;
+    }
+    .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #img50, #img51 {
+        display: flex;
+    }
+
+    /* Form */
+    .contact-details .title {
+        font-size: 16vw;
+    }
+    .detail img {
+        width: 4.5vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    .form-img {
+        display: flex;
+        width: 85%;
+        align-self: center;
+        object-fit: cover;
+        height: 21vh;
+    }
+    .form {
+        width: 90%;
+    }
+    #confirmation {
+        height: 100vh;
+        justify-content: space-between;
+    }
+}
+
+
+/* HTML: <div class="loader"></div> */
+h1 {
+    display: flex;
+  }
+  
+  h1 span {
+    animation: l44 2s ease-in-out;
+  }
+  h1 span:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  h1 span:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  h1 span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  h1 span:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  h1 span:nth-child(5) {
+    animation-delay: 1s;
+  }
+  h1 span:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+
+  @keyframes l44 {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-10px);}
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+    
+  }
+
+
+  .loading-container, .loading-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .loading-container img, .loading-container2 img {
+    width: 35vw;
+    opacity: 0;
+    animation: fadeInOut 3.5s ease-in-out infinite;
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .loading-container, .loading-container2 {
+    animation: fadeOut 3s ease-in-out 7s forwards;
+  }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.spinner {
+  font-size: 75px;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+.spinner.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.spinner-blade {
+  position: absolute;
+  left: 0.4629em;
+  bottom: 0;
+  width: 0.074em;
+  height: 0.2777em;
+  border-radius: 0.5em;
+  background-color: transparent;
+  transform-origin: center -0.2222em;
+  -webkit-animation: spinner-fade 1s infinite linear;
+          animation: spinner-fade 1s infinite linear;
+}
+.spinner-blade:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  transform: rotate(0deg);
+}
+.spinner-blade:nth-child(2) {
+  -webkit-animation-delay: 0.083s;
+          animation-delay: 0.083s;
+  transform: rotate(30deg);
+}
+.spinner-blade:nth-child(3) {
+  -webkit-animation-delay: 0.166s;
+          animation-delay: 0.166s;
+  transform: rotate(60deg);
+}
+.spinner-blade:nth-child(4) {
+  -webkit-animation-delay: 0.249s;
+          animation-delay: 0.249s;
+  transform: rotate(90deg);
+}
+.spinner-blade:nth-child(5) {
+  -webkit-animation-delay: 0.332s;
+          animation-delay: 0.332s;
+  transform: rotate(120deg);
+}
+.spinner-blade:nth-child(6) {
+  -webkit-animation-delay: 0.415s;
+          animation-delay: 0.415s;
+  transform: rotate(150deg);
+}
+.spinner-blade:nth-child(7) {
+  -webkit-animation-delay: 0.498s;
+          animation-delay: 0.498s;
+  transform: rotate(180deg);
+}
+.spinner-blade:nth-child(8) {
+  -webkit-animation-delay: 0.581s;
+          animation-delay: 0.581s;
+  transform: rotate(210deg);
+}
+.spinner-blade:nth-child(9) {
+  -webkit-animation-delay: 0.664s;
+          animation-delay: 0.664s;
+  transform: rotate(240deg);
+}
+.spinner-blade:nth-child(10) {
+  -webkit-animation-delay: 0.747s;
+          animation-delay: 0.747s;
+  transform: rotate(270deg);
+}
+.spinner-blade:nth-child(11) {
+  -webkit-animation-delay: 0.83s;
+          animation-delay: 0.83s;
+  transform: rotate(300deg);
+}
+.spinner-blade:nth-child(12) {
+  -webkit-animation-delay: 0.913s;
+          animation-delay: 0.913s;
+  transform: rotate(330deg);
+}
+
+@-webkit-keyframes spinner-fade {
+  0% {
+    background-color: #d8bc9a;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes spinner-fade {
+  0% {
+    background-color: #A18058;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.loading-container.hidden {
+    z-index: -999; /* Set z-index to -999 when hidden */
+  }
+
+
+#typage {
+    text-align: center;
+}
+.definition > *, .prop-container > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 2s;
+}
+
+.definition > *.fade-in, .prop-container > *.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

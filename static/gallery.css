@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+nav {
+    position: fixed;
+    font-family: "Alegreya Sans SC", sans-serif;
+    align-items: center;
+    z-index: 2;
+}
+nav a {
+    font-size: 1.4vw;
+}
+main {
+    z-index: 1;
+}
+main img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.mini-gallery {
+    position: fixed;
+    align-self: center;
+    z-index: 3;
+    height: fit-content;
+    display: none;
+}
+.mini-gallery .images {
+    height: 100vh;
+    align-self: center;
+    
+}
+.images img {
+    object-fit: contain;
+    height: auto;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(70, 44, 25, 0.65);
+    z-index: 2;
+    display: none;
+}
+.images nav a {
+    position: absolute;
+    right: 80px;
+    top: 46px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+    main img {
+        height: auto; 
+    }
+    nav a {
+        font-size: 4vw;
+    }
+    .mini-gallery {
+        height: fit-content;
+        top: 35%;
+    }
+    .mini-gallery .images {
+        height: fit-content;
+    }
+    .images nav{
+        display: none;
+    }
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
+  }
